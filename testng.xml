@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.rp.affordable.extentReportsManager.Reporting" />
+	</listeners>
+
+	<parameter name="browser" value="chrome" />
+	<test name="Browser Test">
+
+		<classes>
+			<class name="com.rp.affordable.testCases.TC_LoginTest_001" />
+			<!-- <class name="com.rp.affordable.testCases.TC_LoginDDT_002" />  -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

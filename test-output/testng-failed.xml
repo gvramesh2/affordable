@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.rp.affordable.extentReportsManager.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Browser Test(failed)">
+    <classes>
+      <class name="com.rp.affordable.testCases.TC_LoginDDT_002">
+        <methods>
+          <include name="loginDDT" invocation-numbers="0 1 2 3 4"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.rp.affordable.testCases.TC_LoginDDT_002 -->
+    </classes>
+  </test> <!-- Browser Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
